@@ -15,15 +15,29 @@ body {
     text-align: center;
 }
 
+#playDiv img {
+    position: relative;
+    top: 25%;
+    height: auto;
+}
+
 #play {
-    margin: 0;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
     font-size: x-large;
-    padding: 20px;
+    padding: 18px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#play:hover {
+    background-color: #000;
 }
 
 #mainDiv {

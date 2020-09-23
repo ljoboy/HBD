@@ -22,7 +22,7 @@
           content="May your birthday bring you as much as you happiness you give to every one who knows you"/>
     <meta property="og:image"
           content="https://scontent.cdninstagram.com/t51.2885-19/s320x320/17332840_428978084117611_7673563513641500672_a.jpg"/>
-    <meta property="og:url" content="https://vinitshahdeo.github.io/HBD"/>
+    <meta property="og:url" content="https://ljoboy.github.io/HBD"/>
     <meta property="og:site_name" content="Happy Birthday!"/>
 
     <meta name="twitter:card" content="website">
@@ -144,6 +144,11 @@
         copyright.css("bottom", "10px");
         document.execCommand("stop");
     } else {
+        $("#play").click(function () {
+                $("#hbd_song")[0].play()
+            }
+        );
+
         setTimeout(function () {
             startHeartAnimation();
         }, 5000);

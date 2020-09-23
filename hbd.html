@@ -145,21 +145,23 @@
         document.execCommand("stop");
     } else {
         $("#play").click(function () {
-                $("#hbd_song")[0].play()
+                $("#hbd_song")[0].play();
+                $("#playDiv").fadeOut();
+                setTimeout(function () {
+                    startHeartAnimation();
+                }, 5000);
+
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+
+                adjustCodePosition();
+                $("#code").typewriter();
             }
         );
 
-        setTimeout(function () {
-            startHeartAnimation();
-        }, 5000);
 
-        timeElapse(together);
-        setInterval(function () {
-            timeElapse(together);
-        }, 500);
-
-        adjustCodePosition();
-        $("#code").typewriter();
     }
 </script>
 </body>
